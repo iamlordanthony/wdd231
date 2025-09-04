@@ -1,0 +1,39 @@
+/* Styles for screens 768px and up */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: block !important;
+        /* Always show nav on large screens */
+        background: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    .course-card {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+    }
+
+    .filter-buttons {
+        justify-content: flex-start;
+        max-width: 400px;
+    }
+}

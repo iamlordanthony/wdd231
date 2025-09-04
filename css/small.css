@@ -1,0 +1,142 @@
+/* Base styles (Mobile-first) */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+}
+
+.logo-container img {
+    height: 40px;
+}
+
+.site-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+#menu-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+    display: none;
+    text-align: center;
+    background: #004080;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav a.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    color: #003366;
+}
+
+.course-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.course-card.completed {
+    border-left: 5px solid #28a745;
+    /* green stripe for completed courses */
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.filter-buttons button {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #003366;
+    background: white;
+    color: #003366;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.filter-buttons button:hover {
+    background: #003366;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #003366;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    color: #ffd700;
+    margin: 0 0.25rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
