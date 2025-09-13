@@ -16,10 +16,12 @@ const membersContainer = document.getElementById("members");
 async function getMembers() {
     try {
         const response = await fetch("data/members.json");
+        if (!response.ok) throw new Error("Failed to load members.json");
         const members = await response.json();
         displayMembers(members);
     } catch (error) {
         console.error("Error loading members:", error);
+        membersContainer.innerHTML = "<p class='error'>⚠️ Unable to load members at this time.</p>";
     }
 }
 
@@ -30,11 +32,11 @@ function displayMembers(members) {
         card.classList.add("member-card");
 
         card.innerHTML = `
-      <img src="${member.image}" alt="${member.name} logo">
+      <img src="${member.image}" alt="${member.name} logo" loading="lazy">
       <h3>${member.name}</h3>
       <p>${member.address}</p>
       <p>${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visit Website</a>
+      <a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website</a>
       <p><strong>${member.membership} Member</strong></p>
     `;
 

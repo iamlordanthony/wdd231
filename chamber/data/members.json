@@ -22,5 +22,37 @@
         "website": "https://heritagetours.com",
         "image": "images/tours.png",
         "membership": "Member"
+    },
+    {
+        "name": "Sunrise Printing Press",
+        "address": "12 Graphic Rd, Accra",
+        "phone": "+233 24 987 6543",
+        "website": "https://sunriseprint.com",
+        "image": "images/printing.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "Elite Fitness Center",
+        "address": "5 Cantonments Rd, Accra",
+        "phone": "+233 55 123 4567",
+        "website": "https://elitefitness.com",
+        "image": "images/fitness.png",
+        "membership": "Gold"
+    },
+    {
+        "name": "GreenGro Farmers Market",
+        "address": "88 Osu Rd, Accra",
+        "phone": "+233 23 222 3333",
+        "website": "https://greengro.com",
+        "image": "images/market.png",
+        "membership": "Member"
+    },
+    {
+        "name": "Royal Hotel Accra",
+        "address": "15 Labadi Beach Rd, Accra",
+        "phone": "+233 30 444 5555",
+        "website": "https://royalhotelaccra.com",
+        "image": "images/hotel.png",
+        "membership": "Gold"
     }
 ]
