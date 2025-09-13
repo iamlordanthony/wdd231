@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Accra Bakery",
+        "address": "123 High St, Accra",
+        "phone": "+233 24 000 1111",
+        "website": "https://accrabakery.com",
+        "image": "images/bakery.png",
+        "membership": "Gold"
+    },
+    {
+        "name": "Kwame’s Tech Solutions",
+        "address": "45 Ring Rd, Accra",
+        "phone": "+233 20 555 3333",
+        "website": "https://kwametech.com",
+        "image": "images/tech.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "Heritage Tours",
+        "address": "78 Independence Ave, Accra",
+        "phone": "+233 27 888 4444",
+        "website": "https://heritagetours.com",
+        "image": "images/tours.png",
+        "membership": "Member"
+    }
+]
