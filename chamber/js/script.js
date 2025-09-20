@@ -104,7 +104,7 @@ const currentTemp = document.getElementById("current-temp");
 const forecastContainer = document.getElementById("forecast");
 
 if (weatherDescription && currentTemp && forecastContainer) {
-    const apiKey = "YOUR_OPENWEATHERMAP_API_KEY"; // <-- Replace with your API key
+    const apiKey = "101298823795781ac926393e77669e07"; // <--  API key
     const city = "Accra";
     const units = "metric"; // or "imperial" for Fahrenheit
     const apiURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}&appid=${apiKey}`;
