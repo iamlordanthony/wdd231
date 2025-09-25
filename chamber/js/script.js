@@ -136,3 +136,61 @@ if (weatherDescription && currentTemp && forecastContainer) {
 
     getWeather();
 }
+
+// =======================
+// Join Page Enhancements
+// =======================
+const joinForm = document.querySelector(".join-form");
+if (joinForm) {
+    // Set timestamp hidden field
+    const tsField = document.getElementById("timestamp");
+    if (tsField) {
+        tsField.value = new Date().toISOString();
+    }
+
+    // Membership cards animation
+    const cards = document.querySelectorAll(".membership-cards .card");
+    cards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add("show");
+        }, index * 200); // staggered effect
+    });
+
+    // Modal functionality
+    const modalLinks = document.querySelectorAll(".modal-link");
+    const modals = document.querySelectorAll(".modal");
+
+    modalLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const modalId = link.closest(".card").dataset.modal;
+            const modal = document.getElementById(modalId);
+            if (modal) modal.style.display = "block";
+        });
+    });
+
+    // Close modals on X click
+    modals.forEach(modal => {
+        const closeBtn = modal.querySelector(".close");
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    });
+
+    // Close on outside click
+    window.addEventListener("click", (e) => {
+        modals.forEach(modal => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    });
+
+    // Close on Escape key
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            modals.forEach(modal => modal.style.display = "none");
+        }
+    });
+}
+
