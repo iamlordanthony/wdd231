@@ -4,7 +4,7 @@
         "name": "Jamestown Lighthouse",
         "address": "Jamestown, Accra",
         "description": "Historic lighthouse overlooking the harbor with colorful fishing boats and coastal views.",
-        "image": "chambers/images/jamestown-lighthouse.webp"
+        "image": "/images/jamestown-lighthouse.webp"
     },
     {
         "id": "2",
