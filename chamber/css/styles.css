@@ -442,3 +442,202 @@ dialog h3 {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+/* ---------- DISCOVER PAGE GRID (named grid areas) ---------- */
+
+/* container */
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+    /* small (mobile) fallback - one column using named areas */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5"
+        "a6"
+        "a7"
+        "a8";
+}
+
+/* card base */
+.discover-grid .card {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+/* place each card into a named area using nth-child */
+.discover-grid .card:nth-child(1) {
+    grid-area: a1;
+}
+
+.discover-grid .card:nth-child(2) {
+    grid-area: a2;
+}
+
+.discover-grid .card:nth-child(3) {
+    grid-area: a3;
+}
+
+.discover-grid .card:nth-child(4) {
+    grid-area: a4;
+}
+
+.discover-grid .card:nth-child(5) {
+    grid-area: a5;
+}
+
+.discover-grid .card:nth-child(6) {
+    grid-area: a6;
+}
+
+.discover-grid .card:nth-child(7) {
+    grid-area: a7;
+}
+
+.discover-grid .card:nth-child(8) {
+    grid-area: a8;
+}
+
+/* card content */
+.card figure {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 300ms ease, filter 300ms ease, opacity 300ms;
+}
+
+.card .card-body {
+    padding: 0.75rem;
+    flex: 1 1 auto;
+}
+
+.card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.05rem;
+    color: #004080;
+}
+
+.card address {
+    font-style: normal;
+    color: #6b6b6b;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.card p {
+    margin: 0 0 0.75rem 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.card .card-actions {
+    margin-top: auto;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card .card-actions button {
+    background: #004080;
+    color: #fff;
+    border: 0;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ------ medium screens (641px - 1024px) - two columns using named areas ------ */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "a1 a2"
+            "a3 a4"
+            "a5 a6"
+            "a7 a8";
+    }
+
+    /* enable image hover effects on medium+ */
+    .card img:hover {
+        transform: scale(1.04);
+        filter: saturate(1.05) contrast(1.03);
+    }
+}
+
+/* ------ large screens (1025px and up) - 4 across as two rows ------ */
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "a1 a2 a3 a4"
+            "a5 a6 a7 a8";
+        padding: 2rem;
+    }
+
+    .card img {
+        height: 180px;
+        /* slightly shorter on wide screens */
+    }
+
+    /* add a little larger hover effect on desktop */
+    .card img:hover {
+        transform: scale(1.07);
+        filter: saturate(1.1);
+    }
+}
+
+/* Prevent hover transform on touch/mobile: only apply in non-touch via media queries above.
+   If you want extra safety: use pointer: fine media query to target mouse devices */
+@media (pointer: coarse) {
+    .card img {
+        transition: none;
+        transform: none;
+    }
+}
+
+/* simple banner for last-visit message */
+.visit-banner {
+    background: #fff5e6;
+    border-left: 4px solid #ffd699;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem;
+    border-radius: 6px;
+}
+
+.visit-banner #last-visit-msg {
+    font-weight: 600;
+    color: #333;
+}
+
+.visit-banner button {
+    background: transparent;
+    border: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* small adjustments */
+.discover-intro {
+    padding: 0 1rem 0 1rem;
+    margin-top: 0.25rem;
+}

@@ -194,3 +194,92 @@ if (joinForm) {
     });
 }
 
+/* ---------------- DISCOVER PAGE: fetch + render + last-visit ---------------- */
+const discoverGrid = document.getElementById('discover-grid');
+
+if (discoverGrid) {
+    const DATA_URL = 'data/discover.json';
+
+    async function loadDiscover() {
+        try {
+            const res = await fetch(DATA_URL);
+            if (!res.ok) throw new Error('Discover JSON not found');
+            const items = await res.json();
+            renderDiscover(items);
+        } catch (err) {
+            console.error('Discover load error:', err);
+            discoverGrid.innerHTML = '<p class="error">Unable to load places at this time.</p>';
+        }
+    }
+
+    function renderDiscover(items) {
+        discoverGrid.innerHTML = ''; // clear
+        items.forEach((item) => {
+            const card = document.createElement('article');
+            card.className = 'card';
+            card.setAttribute('tabindex', '0');
+
+            card.innerHTML = `
+        <figure>
+          <img src="${item.image}" alt="${item.name} photo" loading="lazy" width="300" height="200">
+        </figure>
+        <div class="card-body">
+          <h2>${item.name}</h2>
+          <address>${item.address}</address>
+          <p>${item.description}</p>
+          <div class="card-actions">
+            <button type="button" data-id="${item.id}" aria-label="Learn more about ${item.name}">Learn more</button>
+          </div>
+        </div>
+      `;
+            discoverGrid.appendChild(card);
+        });
+
+        // attach simple button listeners (could open modal or navigate)
+        discoverGrid.querySelectorAll('.card-actions button').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const id = btn.getAttribute('data-id');
+                // placeholder: could open modal with more details. For now, just alert (or you can implement modal)
+                alert('Learn more: item id ' + id);
+            });
+        });
+    }
+
+    /* ---------- last-visit localStorage message ---------- */
+    const lastVisitKey = 'accra-discover-last-visit';
+    const lastVisitMsgEl = document.getElementById('last-visit-msg');
+    const closeVisitBtn = document.getElementById('close-visit');
+
+    function showLastVisitMessage() {
+        const now = Date.now();
+        const last = localStorage.getItem(lastVisitKey);
+        if (!last) {
+            lastVisitMsgEl.textContent = 'Welcome! Let us know if you have any questions.';
+        } else {
+            const msDiff = now - Number(last);
+            const days = Math.floor(msDiff / (1000 * 60 * 60 * 24));
+            if (days < 1) {
+                lastVisitMsgEl.textContent = 'Back so soon! Awesome!';
+            } else if (days === 1) {
+                lastVisitMsgEl.textContent = 'You last visited 1 day ago.';
+            } else {
+                lastVisitMsgEl.textContent = `You last visited ${days} days ago.`;
+            }
+        }
+        // update stored timestamp for next visit
+        localStorage.setItem(lastVisitKey, now.toString());
+    }
+
+    if (lastVisitMsgEl) {
+        showLastVisitMessage();
+        if (closeVisitBtn) {
+            closeVisitBtn.addEventListener('click', () => {
+                document.getElementById('visit-banner').style.display = 'none';
+            });
+        }
+    }
+
+    // load data
+    loadDiscover();
+}
+

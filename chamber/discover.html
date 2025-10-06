@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Discover Accra — points of interest, attractions and local information.">
+    <meta name="author" content="Lord Anthony Senanu">
+    <title>Accra Chamber - Discover</title>
+
+    <!-- normalize first (if you have it) -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- header/nav (same template used across site) -->
+    <header>
+        <h1>Accra Chamber of Commerce</h1>
+        <nav>
+            <button id="menu-button" aria-expanded="false" aria-controls="menu">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="visit-banner" aria-live="polite" class="visit-banner">
+            <div id="last-visit-msg">Welcome!</div>
+            <button id="close-visit" aria-label="Close last visit message">×</button>
+        </section>
+
+        <section class="discover-intro">
+            <h2>Discover Accra</h2>
+            <p>Explore eight notable places and attractions from around our city — selected to help visitors and
+                prospective members appreciate our region.</p>
+        </section>
+
+        <!-- grid container: cards will be inserted here -->
+        <section id="discover-grid" class="discover-grid" aria-live="polite" aria-label="Places of interest">
+            <!-- cards inserted by JS -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: info@accrachamber.org | +233 2000 66 200</p>
+        <p>&copy; <span id="year"></span> | Lord Anthony Senanu | WDD 231</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <!-- single script file already used for other pages -->
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

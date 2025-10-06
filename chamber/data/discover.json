@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "name": "Jamestown Lighthouse",
+        "address": "Jamestown, Accra",
+        "description": "Historic lighthouse overlooking the harbor with colorful fishing boats and coastal views.",
+        "image": "images/jamestown-lighthouse.webp"
+    },
+    {
+        "id": "2",
+        "name": "Kwame Nkrumah Memorial Park",
+        "address": "Accra Central",
+        "description": "National monument dedicated to Ghana's first president and an educational museum about independence.",
+        "image": "images/nkrumah-memorial.webp"
+    },
+    {
+        "id": "3",
+        "name": "Labadi Beach",
+        "address": "Labadi, Accra",
+        "description": "Popular city beach offering live drumming, horseback rides, and seaside relaxation.",
+        "image": "images/labadi-beach.webp"
+    },
+    {
+        "id": "4",
+        "name": "Makola Market",
+        "address": "Accra Central",
+        "description": "Bustling open market known for fabrics, crafts, and vibrant local commerce.",
+        "image": "images/makola-market.webp"
+    },
+    {
+        "id": "5",
+        "name": "National Museum of Ghana",
+        "address": "Barnes Road, Accra",
+        "description": "Displays cultural and historical artifacts detailing Ghana's rich heritage and arts.",
+        "image": "images/national-museum.webp"
+    },
+    {
+        "id": "6",
+        "name": "Osu Oxford Street",
+        "address": "Osu, Accra",
+        "description": "A lively street with restaurants, shops and nightlife — a hub for dining and social life.",
+        "image": "images/osu-oxford.webp"
+    },
+    {
+        "id": "7",
+        "name": "La Palm Royal Beach Resort",
+        "address": "Labadi Beach Rd, Accra",
+        "description": "Luxury beachfront hotel and event venue often hosting conferences and cultural events.",
+        "image": "images/lapalm-beach.webp"
+    },
+    {
+        "id": "8",
+        "name": "Arts Center & Craft Village",
+        "address": "Tudu, Accra",
+        "description": "Handcrafts, kente textiles and souvenirs — a great place to connect with local artisans.",
+        "image": "images/arts-center.webp"
+    }
+]
