@@ -5,7 +5,7 @@
         "category": "lipstick",
         "price": 24,
         "sku": "NL-LIP-001",
-        "image": "images/product1.webp",
+        "image": "images/product1.jpg",
         "description": "Creamy, long-lasting lipstick with intense pigment.",
         "vegan": true
     },
@@ -15,7 +15,7 @@
         "category": "lipstick",
         "price": 24,
         "sku": "NL-LIP-002",
-        "image": "images/product2.webp",
+        "image": "images/product2.jpg",
         "description": "Hydrating formula with satin finish.",
         "vegan": true
     },
@@ -25,7 +25,7 @@
         "category": "foundation",
         "price": 36,
         "sku": "NL-FND-010",
-        "image": "images/product3.webp",
+        "image": "images/product3.jpg",
         "description": "Weightless, buildable coverage with natural finish.",
         "vegan": true
     },
@@ -35,7 +35,7 @@
         "category": "foundation",
         "price": 36,
         "sku": "NL-FND-011",
-        "image": "images/product4.webp",
+        "image": "images/product4.jpg",
         "description": "Oil-control formula for long wear.",
         "vegan": true
     },
@@ -45,7 +45,7 @@
         "category": "skin",
         "price": 28,
         "sku": "NL-PRM-001",
-        "image": "images/product5.webp",
+        "image": "images/product5.jpg",
         "description": "Add radiance and blur fine lines.",
         "vegan": true
     },
@@ -55,7 +55,7 @@
         "category": "eye",
         "price": 34,
         "sku": "NL-EYE-020",
-        "image": "images/product6.webp",
+        "image": "images/product6.jpg",
         "description": "12 shades for day-to-night looks.",
         "vegan": true
     },
@@ -65,7 +65,7 @@
         "category": "eye",
         "price": 18,
         "sku": "NL-BRW-001",
-        "image": "images/product7.webp",
+        "image": "images/product7.jpg",
         "description": "Tames and sculpts brows for natural hold.",
         "vegan": true
     },
@@ -75,7 +75,7 @@
         "category": "skin",
         "price": 20,
         "sku": "NL-MST-001",
-        "image": "images/product8.webp",
+        "image": "images/product8.jpg",
         "description": "Locks makeup with a lightweight finish.",
         "vegan": true
     },
@@ -85,7 +85,7 @@
         "category": "skin",
         "price": 22,
         "sku": "NL-BLS-001",
-        "image": "images/product9.webp",
+        "image": "images/product9.jpg",
         "description": "Sheer, blendable color for cheeks.",
         "vegan": true
     },
@@ -95,7 +95,7 @@
         "category": "skin",
         "price": 26,
         "sku": "NL-HL-001",
-        "image": "images/product10.webp",
+        "image": "images/product10.jpg",
         "description": "Buildable glow for cheekbones and brow bone.",
         "vegan": true
     },
@@ -105,7 +105,7 @@
         "category": "eye",
         "price": 16,
         "sku": "NL-EYL-001",
-        "image": "images/product11.webp",
+        "image": "images/product11.jpg",
         "description": "Precision tip for crisp lines.",
         "vegan": true
     },
@@ -115,7 +115,7 @@
         "category": "lipstick",
         "price": 12,
         "sku": "NL-LIP-010",
-        "image": "images/product12.webp",
+        "image": "images/product12.jpg",
         "description": "Daily balm to protect and soften lips.",
         "vegan": true
     },
@@ -125,7 +125,7 @@
         "category": "tools",
         "price": 48,
         "sku": "NL-BRUSH-01",
-        "image": "images/product13.webp",
+        "image": "images/product13.jpg",
         "description": "Synthetic brushes for face and eyes.",
         "vegan": true
     },
@@ -135,7 +135,7 @@
         "category": "skin",
         "price": 32,
         "sku": "NL-CNT-001",
-        "image": "images/product14.webp",
+        "image": "images/product14.jpg",
         "description": "Warm and cool shades for sculpting faces.",
         "vegan": true
     },
@@ -145,7 +145,7 @@
         "category": "lipstick",
         "price": 14,
         "sku": "NL-LIP-020",
-        "image": "images/product15.webp",
+        "image": "images/product15.jpg",
         "description": "High-shine gloss with comfortable wear.",
         "vegan": true
     }
