@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Noirelle product catalog — explore our vegan cosmetics." />
+    <meta name="author" content="Lord Anthony Senanu" />
+    <title>Noirelle — Products</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta property="og:title" content="Noirelle Products" />
+    <meta property="og:description" content="Shop Noirelle - luxurious vegan cosmetics." />
+    <meta property="og:image" content="images/og-products.webp" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand"><a href="index.html">Noirelle</a></div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <button id="menu-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+            <ul id="menu" class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-intro">
+            <h1>Products</h1>
+            <p>Browse our curated collections. Use the filters to refine results.</p>
+
+            <div class="controls">
+                <label>
+                    Category:
+                    <select id="filter-category">
+                        <option value="all">All</option>
+                        <option value="lipstick">Lipstick</option>
+                        <option value="foundation">Foundation</option>
+                        <option value="eye">Eye</option>
+                        <option value="skin">Skin</option>
+                    </select>
+                </label>
+
+                <label>
+                    Sort:
+                    <select id="sort-by">
+                        <option value="featured">Featured</option>
+                        <option value="price-asc">Price: Low→High</option>
+                        <option value="price-desc">Price: High→Low</option>
+                    </select>
+                </label>
+            </div>
+        </section>
+
+        <section id="product-grid" class="product-grid" aria-live="polite">
+            <!-- product cards injected here by JS -->
+        </section>
+
+        <!-- Accessible modal dialog for product details -->
+        <dialog id="product-modal" class="product-modal" aria-hidden="true">
+            <form method="dialog" aria-label="Product details">
+                <button id="modal-close" aria-label="Close">×</button>
+                <div id="modal-content"></div>
+            </form>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Noirelle Makeup</p>
+        <p><a href="index.html">Home</a> • <a href="about.html">About</a></p>
+    </footer>
+
+    <script type="module" src="js/app.js" defer></script>
+</body>
+
+</html>

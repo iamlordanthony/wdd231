@@ -1,0 +1,152 @@
+[
+    {
+        "id": "p01",
+        "name": "Velvet Luxe Lipstick - Ruby",
+        "category": "lipstick",
+        "price": 24,
+        "sku": "NL-LIP-001",
+        "image": "images/product1.webp",
+        "description": "Creamy, long-lasting lipstick with intense pigment.",
+        "vegan": true
+    },
+    {
+        "id": "p02",
+        "name": "Velvet Luxe Lipstick - Rose",
+        "category": "lipstick",
+        "price": 24,
+        "sku": "NL-LIP-002",
+        "image": "images/product2.webp",
+        "description": "Hydrating formula with satin finish.",
+        "vegan": true
+    },
+    {
+        "id": "p03",
+        "name": "Matte Mousse Foundation - Ivory",
+        "category": "foundation",
+        "price": 36,
+        "sku": "NL-FND-010",
+        "image": "images/product3.webp",
+        "description": "Weightless, buildable coverage with natural finish.",
+        "vegan": true
+    },
+    {
+        "id": "p04",
+        "name": "Matte Mousse Foundation - Sand",
+        "category": "foundation",
+        "price": 36,
+        "sku": "NL-FND-011",
+        "image": "images/product4.webp",
+        "description": "Oil-control formula for long wear.",
+        "vegan": true
+    },
+    {
+        "id": "p05",
+        "name": "Glow Serum Primer",
+        "category": "skin",
+        "price": 28,
+        "sku": "NL-PRM-001",
+        "image": "images/product5.webp",
+        "description": "Add radiance and blur fine lines.",
+        "vegan": true
+    },
+    {
+        "id": "p06",
+        "name": "Eyeshadow Palette - Dusk",
+        "category": "eye",
+        "price": 34,
+        "sku": "NL-EYE-020",
+        "image": "images/product6.webp",
+        "description": "12 shades for day-to-night looks.",
+        "vegan": true
+    },
+    {
+        "id": "p07",
+        "name": "Brow Sculpt Gel - Brown",
+        "category": "eye",
+        "price": 18,
+        "sku": "NL-BRW-001",
+        "image": "images/product7.webp",
+        "description": "Tames and sculpts brows for natural hold.",
+        "vegan": true
+    },
+    {
+        "id": "p08",
+        "name": "Setting Mist",
+        "category": "skin",
+        "price": 20,
+        "sku": "NL-MST-001",
+        "image": "images/product8.webp",
+        "description": "Locks makeup with a lightweight finish.",
+        "vegan": true
+    },
+    {
+        "id": "p09",
+        "name": "Cream Blush - Coral",
+        "category": "skin",
+        "price": 22,
+        "sku": "NL-BLS-001",
+        "image": "images/product9.webp",
+        "description": "Sheer, blendable color for cheeks.",
+        "vegan": true
+    },
+    {
+        "id": "p10",
+        "name": "Highlighter Stick - Gold",
+        "category": "skin",
+        "price": 26,
+        "sku": "NL-HL-001",
+        "image": "images/product10.webp",
+        "description": "Buildable glow for cheekbones and brow bone.",
+        "vegan": true
+    },
+    {
+        "id": "p11",
+        "name": "Liquid Eyeliner - Jet",
+        "category": "eye",
+        "price": 16,
+        "sku": "NL-EYL-001",
+        "image": "images/product11.webp",
+        "description": "Precision tip for crisp lines.",
+        "vegan": true
+    },
+    {
+        "id": "p12",
+        "name": "Hydrating Lip Balm",
+        "category": "lipstick",
+        "price": 12,
+        "sku": "NL-LIP-010",
+        "image": "images/product12.webp",
+        "description": "Daily balm to protect and soften lips.",
+        "vegan": true
+    },
+    {
+        "id": "p13",
+        "name": "Vegan Brush Set (5 pcs)",
+        "category": "tools",
+        "price": 48,
+        "sku": "NL-BRUSH-01",
+        "image": "images/product13.webp",
+        "description": "Synthetic brushes for face and eyes.",
+        "vegan": true
+    },
+    {
+        "id": "p14",
+        "name": "Contour Palette - Warm",
+        "category": "skin",
+        "price": 32,
+        "sku": "NL-CNT-001",
+        "image": "images/product14.webp",
+        "description": "Warm and cool shades for sculpting faces.",
+        "vegan": true
+    },
+    {
+        "id": "p15",
+        "name": "Lip Gloss - Sheer Pink",
+        "category": "lipstick",
+        "price": 14,
+        "sku": "NL-LIP-020",
+        "image": "images/product15.webp",
+        "description": "High-shine gloss with comfortable wear.",
+        "vegan": true
+    }
+]
