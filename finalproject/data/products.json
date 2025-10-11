@@ -75,7 +75,7 @@
         "category": "skin",
         "price": 20,
         "sku": "NL-MST-001",
-        "image": "images/product8.jpg",
+        "image": "images/product8.jpeg",
         "description": "Locks makeup with a lightweight finish.",
         "vegan": true
     },
@@ -85,7 +85,7 @@
         "category": "skin",
         "price": 22,
         "sku": "NL-BLS-001",
-        "image": "images/product9.jpg",
+        "image": "images/product9.jpeg",
         "description": "Sheer, blendable color for cheeks.",
         "vegan": true
     },
@@ -95,7 +95,7 @@
         "category": "skin",
         "price": 26,
         "sku": "NL-HL-001",
-        "image": "images/product10.jpg",
+        "image": "images/product10.jpeg",
         "description": "Buildable glow for cheekbones and brow bone.",
         "vegan": true
     },
